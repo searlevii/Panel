@@ -1,3 +1,4 @@
 class Student < ApplicationRecord
-    has_many: cohort
+    belongs_to :cohort
+    has_many :cohort
 end
