@@ -1,0 +1,9 @@
+<%= form_tag("/students", method: "post") do %>
+    <%= label_tag(:student, "search for:") %>
+    <%= text_field(:student, :first_name) %>
+    <%= text_field(:student, :last_name) %>
+    <%= text_field(:student, :age) %>
+    <%= text_field(:student, :education) %>
+    <%= text_field(:student, :cohort) %>
+    <%= submit_tag("Search") %>
+  <% end %>

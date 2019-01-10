@@ -1,4 +1,5 @@
 class IndexController < ApplicationController
-  def index
+  def studentform
+    @student = Student.new
   end
 end
