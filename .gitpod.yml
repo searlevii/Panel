@@ -1,0 +1,5 @@
+ports:
+- port: 3000
+tasks:
+- command: "\x16rvm install \"ruby-2.5.1\" && gem install rails && bundle update listen
+    && rails s"
