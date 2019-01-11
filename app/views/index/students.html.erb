@@ -1,0 +1,32 @@
+<h1> Table </h1>
+<div>
+ <% @students.each do |students| %>
+ <p> <%= @students.first_name %> </p>
+ <p> <%= @students.last_name %> </p>
+ <p> <%= @students.age %> </p>
+ <p> <%= @students.education %> </p>
+ <p> <%= @students.cohort_id.name %> </p>
+ <% end %>
+</div>
+
+<%= form_tag('newstudent', method: "post") do %>
+    <br>
+    <%= label_tag(:student, 'Enter Student Into Database:') %>
+    <br>
+    <p>First Name:</p>
+    <%= text_field(:student, :first_name) %>
+    <br>
+    <p>Last Name:</p>
+    <%= text_field(:student, :last_name) %>
+    <br>
+    <p>Age:</p>
+    <%= text_field(:student, :age) %>
+    <br>
+    <p>Education:</p>
+    <%= text_field(:student, :education) %>
+    <br>
+    <p>Class:</p>
+    <%= text_field(:student, :cohort) %>
+    <br>
+    <%= submit_tag("Create") %>
+  <% end %>
