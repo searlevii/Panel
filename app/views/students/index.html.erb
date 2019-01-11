@@ -1,0 +1,10 @@
+<h1>Students#index</h1>
+<div>
+    <%= form_for @new_student do |f| %>
+            <%= f.text_field :first_name %>
+            <%= f.text_field :last_name %>
+            <%= f.text_field :age %>
+            <%= f.text_field :education %>
+            <%= f.submit "Create" %>
+    <% end %>
+</div>

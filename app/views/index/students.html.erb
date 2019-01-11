@@ -6,10 +6,11 @@
  <p> <%= @students.age %> </p>
  <p> <%= @students.education %> </p>
  <p> <%= @students.cohort_id.name %> </p>
+
  <% end %>
 </div>
 
-<%= form_tag('newstudent', method: "post") do %>
+<%= form_tag('student', method: "post") do %>
     <br>
     <%= label_tag(:student, 'Enter Student Into Database:') %>
     <br>

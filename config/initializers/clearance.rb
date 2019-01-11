@@ -2,5 +2,5 @@ Clearance.configure do |config|
   config.routes = false
   config.mailer_sender = "reply@example.com"
   config.rotate_csrf_on_sign_in = false
-  config.redirect_url = "index#students"
+  config.redirect_url = "/students/index"
 end
